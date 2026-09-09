@@ -220,7 +220,6 @@ export default function TabTwoScreen() {
           ))}
 
           
-          
         </ThemedView>
       </ThemedView>
     </ScrollView>
