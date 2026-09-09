@@ -117,7 +117,7 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.container}>
         <ThemedText style={styles.welcomeText}>Welcome Chef</ThemedText>
 
-        {/* Add new menu item form */}
+        {/* new menu item form */}
         <ThemedView type="backgroundElement" style={[styles.formContainer, styles.redBackground]}>
           <ThemedText type="subtitle">Add a New Dish</ThemedText>
 
@@ -207,7 +207,7 @@ export default function TabTwoScreen() {
                   <ThemedText type="small">{formatRand(prices[index])}</ThemedText>
                 </ThemedView>
 
-                {/* Customer review - display only, not interactive */}
+                {/* Customer review SECTION */}
                 <ThemedView style={styles.reviewSection}>
                   <ThemedText type="smallBold">Customer Review</ThemedText>
                   <ThemedView style={styles.reviewRow}>
