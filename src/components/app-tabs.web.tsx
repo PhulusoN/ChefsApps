@@ -14,6 +14,7 @@ import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { blue } from 'react-native-reanimated/lib/typescript/Colors';
 
 export default function AppTabs() {
   return (
@@ -22,10 +23,10 @@ export default function AppTabs() {
       <TabList asChild>
         <CustomTabList>
           <TabTrigger name="home" href="/" asChild>
-            <TabButton>Home</TabButton>
+          <TabButton></TabButton>
           </TabTrigger>
           <TabTrigger name="explore" href="/explore" asChild>
-            <TabButton>Delete</TabButton>
+            <TabButton>Menu</TabButton>
           </TabTrigger>
         </CustomTabList>
       </TabList>
@@ -55,7 +56,7 @@ export function CustomTabList(props: TabListProps) {
     <View {...props} style={styles.tabListContainer}>
       <ThemedView type="backgroundElement" style={styles.innerContainer}>
         <ThemedText type="smallBold" style={styles.brandText}>
-          Chefs menu
+          Manage your Menu
         </ThemedText>
 
         {props.children}
@@ -82,6 +83,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     flexGrow: 1,
+    backgroundColor: "#d3ebee",
     gap: Spacing.two,
     maxWidth: MaxContentWidth,
   },
@@ -95,6 +97,7 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.one,
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.three,
+    backgroundColor: "#fffb04",
   },
   externalPressable: {
     flexDirection: 'row',

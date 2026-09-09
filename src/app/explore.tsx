@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   welcomeText: {
-    color: '#0040ff',
+    color: '#a4aecc',
     fontSize: 24,
     fontWeight: '700',
     textAlign: 'center',
@@ -248,7 +248,8 @@ const styles = StyleSheet.create({
   },
 
   redBackground: {
-    backgroundColor: '#cde7fe',
+    backgroundColor: '#ffffff',
+    textShadowColor:'#fffb00',
   },
   formContainer: {
     marginHorizontal: Spacing.four,
@@ -276,7 +277,7 @@ const styles = StyleSheet.create({
     borderRadius: Spacing.three,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#000',
+    shadowColor: '#e5ff00',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
     shadowRadius: 4,
@@ -292,7 +293,7 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   addButtonText: {
-    color: '#FFFFFF',
+    color: '#1f1d1d',
     fontWeight: '600',
     fontSize: 16,
   },
